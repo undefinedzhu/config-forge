@@ -1,0 +1,51 @@
+{
+  "name": "config-tools",
+  "version": "1.0.0",
+  "private": false,
+  "description": "XLSX to JSON & TypeScript interface converter and helper code generators for game configuration.",
+  "main": "convert-xlsx-to-config.js",
+  "type": "commonjs",
+  "bin": {
+    "config-tools": "./convert-xlsx-to-config.js",
+    "convert-xlsx-to-config": "./convert-xlsx-to-config.js",
+    "convert-json-to-table": "./convert-json-to-table.js",
+    "list-xlsx-meta-mapping": "./list-xlsx-meta-mapping.js"
+  },
+  "scripts": {
+    "generate": "node convert-xlsx-to-config.js",
+    "generate:server": "node convert-xlsx-to-config.js --target server",
+    "generate:client": "node convert-xlsx-to-config.js --target client",
+    "export:table": "node convert-json-to-table.js",
+    "list:meta": "node list-xlsx-meta-mapping.js"
+  },
+  "keywords": [
+    "game-config",
+    "xlsx",
+    "json",
+    "typescript",
+    "generator",
+    "tools"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "convert-xlsx-to-config.js",
+    "convert-json-to-table.js",
+    "list-xlsx-meta-mapping.js",
+    "libs/**",
+    "input/**",
+    "config-spreadsheet-spec.md",
+    "README.md",
+    "README.zh-CN.md",
+    "sample.csv"
+  ],
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "exceljs": "^4.4.0",
+    "fs-extra": "^11.1.1",
+    "glob": "^10.3.10"
+  }
+}

@@ -1,0 +1,13 @@
+﻿MetaKey,MetaValue
+TableName,Hero
+JsonFileName,Hero.json
+PrimaryKey,id
+Description,英雄基础配置示例
+
+编号【KEY】,头像ID,中文名,
+id,modeId,cnName,
+int,int,string,
+server,server,server,
+client,client,client,
+1,1001,悟空,
+2,1002,贝吉塔,
